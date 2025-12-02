@@ -1,3 +1,16 @@
+# aball-elite-pi
+Brickbots Aball firmware forked to work with Elite-Pi
+* Updated `keyboard.json` to allow for pro-micro pin compatible boards to allow for use with the Elite-Pi
+* Updated `rules.mk` to include `CONVERT_TO` rule to build for Elite-Pi
+
+* Keyboard Maintainer: [Richard Sutherland](https://github.com/brickbots)
+* Special thanks to the Oddball for doing the heavy lifing with ADNS suport: [atulloh.github.io/oddball](https://atulloh.github.io/oddball)
+* Fork Maintainer: [Daniel Sellers](https://github.com/dsellers/aball-elite-pi)
+
+Compile command:
+	
+	qmk compile -kb handwired/aball-elite-pi -km default -e CONVERT_TO=elite_pi
+
 # ABall
 
 Your keyboard has plenty of buttons, why do you need more on your pointing device? ABall is a buttonless trackball designed to
