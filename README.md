@@ -7,9 +7,13 @@ Brickbots Aball firmware forked to work with Elite-Pi
 * Special thanks to the Oddball for doing the heavy lifing with ADNS suport: [atulloh.github.io/oddball](https://atulloh.github.io/oddball)
 * Fork Maintainer: [Daniel Sellers](https://github.com/dsellers/aball-elite-pi)
 
+Assumed clone location: 
+
+	~/qmk_firmware/keyboards/handwired/aball-elite-pi
+
 Compile command:
-	
-	qmk compile -kb handwired/aball-elite-pi -km default -e CONVERT_TO=elite_pi
+	cd ~/qmk_firmware/keyboards/handwired
+	cp -r aball-elite-pi aball_elite_pi
 	qmk compile -kb handwired/aball_elite_pi -km default -e CONVERT_TO=elite_pi
 
 # ABall
