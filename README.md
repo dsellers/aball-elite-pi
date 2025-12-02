@@ -10,6 +10,7 @@ Brickbots Aball firmware forked to work with Elite-Pi
 Compile command:
 	
 	qmk compile -kb handwired/aball-elite-pi -km default -e CONVERT_TO=elite_pi
+	qmk compile -kb handwired/aball_elite_pi -km default -e CONVERT_TO=elite_pi
 
 # ABall
 
