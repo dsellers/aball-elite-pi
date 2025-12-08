@@ -17,5 +17,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
-#define ADNS9800_CS_PIN F7
-#define POINTING_DEVICE_INVERT_X
+// ADNS-9800 wiring
+#define ADNS9800_CS_PIN             A0      // SEL / NCS on A0
+#define POINTING_DEVICE_MOTION_PIN  A1      // MOT on A1 (optional)
+#define POINTING_DEVICE_INVERT_X            // keep or remove as needed
+
+// SPI mapping for Elite-Pi
+#define SPI_SCK_PIN                 D22
+#define SPI_MOSI_PIN                D23
+#define SPI_MISO_PIN                D20
