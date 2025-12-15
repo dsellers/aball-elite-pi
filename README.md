@@ -11,10 +11,16 @@ Assumed clone location:
 
 	~/qmk_firmware/keyboards/handwired/aball-elite-pi
 
-Compile command:
+Change Directory command:
 
 	cd ~/qmk_firmware/keyboards/handwired
+
+Copy command:
+
 	cp -r aball-elite-pi aball_elite_pi
+
+Compile command:
+
 	qmk compile -kb handwired/aball_elite_pi -km default -e CONVERT_TO=elite_pi
 
 # ABall
