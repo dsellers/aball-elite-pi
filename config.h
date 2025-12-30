@@ -21,11 +21,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define POINTING_DEVICE_DEBUG               // QMK logs this automatically if debug is enabled
 
 // ADNS-9800 wiring
-#define ADNS9800_CS_PIN             A0      // SEL / NCS on A0
-#define POINTING_DEVICE_MOTION_PIN  G27     // MOT pin: A1 on Elite-Pi = GP27 on RP2040
+#define ADNS9800_CS_PIN             GP26    // SEL / NCS on A0
+#define POINTING_DEVICE_MOTION_PIN  GP27    // MOT pin: A1 on Elite-Pi = GP27 on RP2040
 #define POINTING_DEVICE_INVERT_X            // keep or remove as needed
 
 // SPI mapping for Elite-Pi
-#define SPI_SCK_PIN                 D22
-#define SPI_MOSI_PIN                D23
-#define SPI_MISO_PIN                D20
+#define SPI_SCK_PIN                 GP22
+#define SPI_MOSI_PIN                GP23
+#define SPI_MISO_PIN                GP20
