@@ -21,7 +21,7 @@ Copy command:
 
 Compile command:
 
-	qmk compile -kb handwired/aball_elite_pi -km default -e CONVERT_TO=elite_pi
+	qmk compile -kb handwired/aball_elite_pi -km default
 
 # ABall
 
