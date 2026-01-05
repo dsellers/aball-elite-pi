@@ -14,18 +14,17 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 #pragma once
 
-#define CONSOLE_ENABLED                     // As soon as the sensor detects movement, the MOT pin is pulled low (active)
 #define POINTING_DEVICE_DEBUG               // QMK logs this automatically if debug is enabled
+#define SPI_DRIVER SPID0                    // Use RP2040 SPI0 peripheral for ADNS-9800 (matches GP20/22/23 wiring)
 
 // ADNS-9800 wiring
+// #define POINTING_DEVICE_MOTION_PIN  GP27    // MOT pin: A1 on Elite-Pi = GP27 on RP2040
 #define ADNS9800_CS_PIN             GP26    // SEL / NCS on A0
-#define POINTING_DEVICE_MOTION_PIN  GP27    // MOT pin: A1 on Elite-Pi = GP27 on RP2040
-#define POINTING_DEVICE_INVERT_X            // keep or remove as needed
+#define SPI_SCK_PIN                 GP22    // D22 (SCK0)
+#define SPI_MOSI_PIN                GP23    // D23 (MOSI0)
+#define SPI_MISO_PIN                GP20    // D20 (MISO0)
 
-// SPI mapping for Elite-Pi
-#define SPI_SCK_PIN                 GP22
-#define SPI_MOSI_PIN                GP23
-#define SPI_MISO_PIN                GP20
+// Optional invert
+#define POINTING_DEVICE_INVERT_X            // keep or remove as needed
