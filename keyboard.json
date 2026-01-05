@@ -1,8 +1,8 @@
 {
     "keyboard_name": "ABall",
-    "manufacturer": "Richard Sutherland",
-    "url": "https://github.com/brickbots/aball/",
-    "maintainer": "@brickbots",
+    "manufacturer": "Daniel Sellers (Elite-Pi); Richard Sutherland (ABall)",
+    "url": "https://github.com/dsellers/aball-elite-pi",
+    "maintainer": "@dsellers",
     "usb": {
         "vid": "0xFEED",
         "pid": "0xC2F0",
